@@ -1,0 +1,25 @@
+[project]
+name = "catppuccin-customization"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["coloraide>=4.5.1", "cyclopts>=3.11.2", "msgspec>=0.19.0"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "COM",    # flake8-commas
+    "CPY",    # flake8-copyright
+    "D1",     # pydocstyle: D1*
+    "E1",     # pycodestyle: E1*
+    "E2",     # pycodestyle: E2*
+    "FIX",    # flake8-fixme
+    "INP",    # flake8-no-pep420
+    "ISC001", # flake8-implicit-str-concat: single-line-implicit-string-concatenation
+    "Q",      # flake8-quotes
+    "S",      # flake8-bandit
+]

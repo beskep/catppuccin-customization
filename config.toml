@@ -1,0 +1,26 @@
+color_space = 'okhsl'
+inverse_edit_light = true
+
+[[edits]]
+accent = false
+variable = "hue"
+value = 260
+type = "value"
+
+[[edits]]
+name = "text"
+variable = "lightness"
+value = 1.1
+type = "multiply"
+
+[[edits]]
+accent = true
+variable = "saturation"
+value = 0.95
+type = "multiply"
+
+[[edits]]
+name = "peach"
+variable = "lightness"
+value = 0.92
+type = "multiply"
