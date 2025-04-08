@@ -127,7 +127,9 @@ class JsonEncoder:
         if self.detailed:
             return p
 
-        return msgspec.structs.replace(p, **{k: v.to_hex() for k, v in p.palettes()})
+        return msgspec.structs.replace(
+            p, **{k: v.to_hex().colors for k, v in p.palettes()}
+        )
 
     def encode(self, p: Palettes) -> bytes:
         obj = self._palettes(p)

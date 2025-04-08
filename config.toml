@@ -4,8 +4,14 @@ inverse_edit_light = true
 [[edits]]
 accent = false
 variable = "hue"
-value = 260
+value = 250
 type = "value"
+
+[[edits]]
+accent = false
+variable = "saturation"
+value = 0.9
+type = "multiply"
 
 [[edits]]
 name = "text"
@@ -22,5 +28,5 @@ type = "multiply"
 [[edits]]
 name = "peach"
 variable = "lightness"
-value = 0.92
+value = 0.95
 type = "multiply"
